@@ -4,9 +4,9 @@ class Button extends React.Component {
 
     render() {
 
-        const { label, onClick, id, timeZone} = this.props;
+        const { label, onClick, id, timeZone, className} = this.props;
 
-        return <button data-timezone={timeZone} id={id} onClick={onClick}>{label}</button>
+        return <button className={className} data-timezone={timeZone} id={id} onClick={onClick}>{label}</button>
     }
 }
 

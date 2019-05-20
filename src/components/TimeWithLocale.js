@@ -31,7 +31,7 @@ class TimeWithLocale extends React.Component {
         ]
         const buttonContents = _.map(timeZones,(item) => {
 
-            return <Button timeZone={item.timeZone} key={item.id} id={item.id} onClick={this.buttonClick} label = {item.label}/>
+            return <Button className={this.state.timeZone === item.timeZone ? "active" : "inactive" } timeZone={item.timeZone} key={item.id} id={item.id} onClick={this.buttonClick} label = {item.label}/>
         })
 
         return (
